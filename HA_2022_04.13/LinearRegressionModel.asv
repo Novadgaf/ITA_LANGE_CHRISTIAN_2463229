@@ -48,7 +48,7 @@ classdef LinearRegressionModel < matlab.mixin.SetGet
         %
         % Description: calculates the costs by using specific thetas 
         %
-        % Syntax:  J = costFunction(obj)
+        % Syntax:  J = GradientDescentOptimizer(obj)
         %
         % Inputs:
         %    obj - LinearRegressionModel object 
@@ -80,22 +80,6 @@ classdef LinearRegressionModel < matlab.mixin.SetGet
         end
         
         function h = showOptimumInContour(obj)
-        % Function Name: showModel
-        %
-        % Description: plots the function + training data
-        %
-        % Syntax:  h = showModel(obj)
-        %
-        % Inputs:
-        %    obj - LinearRegressionModel object 
-        %
-        %
-        % Outputs:
-        %    h - figure
-        %
-        % $Revision: R2022a$
-        % $Author: Christian Lange$
-        % $Date: April 12, 2022$  
             h = figure('Name','Optimum');
             theta0_vals = linspace(50, 150, 100);
             theta1_vals = linspace(0, 2, 100);
@@ -122,16 +106,16 @@ classdef LinearRegressionModel < matlab.mixin.SetGet
         function h = showCostFunctionArea(obj)
         % Function Name: showCostFunctionArea
         %
-        % Description: plots the costs with each theta0 and theta1 
+        % Description: calculates the costs by using specific thetas 
         %
-        % Syntax:  h = showCostFunctionArea(obj)
+        % Syntax:  J = GradientDescentOptimizer(obj)
         %
         % Inputs:
         %    obj - LinearRegressionModel object 
         %
         %
         % Outputs:
-        %    h - figure
+        %    J - costs
         %
         % $Revision: R2022a$
         % $Author: Christian Lange$
@@ -167,22 +151,6 @@ classdef LinearRegressionModel < matlab.mixin.SetGet
         end
         
         function h = showModel(obj)
-        % Function Name: showModel
-        %
-        % Description: plots the function + training data
-        %
-        % Syntax:  h = showModel(obj)
-        %
-        % Inputs:
-        %    obj - LinearRegressionModel object 
-        %
-        %
-        % Outputs:
-        %    h - figure
-        %
-        % $Revision: R2022a$
-        % $Author: Christian Lange$
-        % $Date: April 12, 2022$  
            h = obj.showTrainingData();
            
            % ========= YOUR CODE HERE =========

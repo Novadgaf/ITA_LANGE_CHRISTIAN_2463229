@@ -16,7 +16,25 @@ classdef LinearRegressionDataFormatter < matlab.mixin.SetGet
     
     methods (Access = public)
         function obj = LinearRegressionDataFormatter(varargin)
-            %DATAPRERPERATOR Construct an instance of this class
+        % Function Name: LinearRegressionDataFormatter
+        %
+        % Description: Construct an instance of this class
+        %
+        % Syntax:  obj =
+        % LinearRegressionDataFormatter('Data','TempearatureMeasurement.mat','Feature','T3','CommandVar','T4');
+        %
+        % Inputs:
+        %    Data - Name of Data file
+        %    Feature - name of feature
+        %    CommandVar - name of commandVar
+        %
+        %
+        % Outputs:
+        %    obj - callable object
+        %
+        % $Revision: R2022a$
+        % $Author: Christian Lange$
+        % $Date: April 12, 2022$
             
             % ========= YOUR CODE HERE =========
             % perform the varargin

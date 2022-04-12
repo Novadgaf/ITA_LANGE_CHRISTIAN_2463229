@@ -15,7 +15,7 @@ dataForLinearRegression = LinearRegressionDataFormatter('Data','TempearatureMeas
     'Feature','T3','CommandVar','T4');
 
 %% create optimizer object
-%18.96s @Intel Core i9 10850K @5GHz | RTX 3070 | 16gb ddr4 Ram @3000MHz
+%18.96s @Intel Core i9 10850K @5Ghz | RTX 3070 | 16gb ddr4 Ram @3000
 gradientDescentOptimizer = GradientDescentOptimizer('LearningRate',9e-6,'MaxIterations',1e7);
 
 %% create lineaer regression model object
